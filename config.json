@@ -1,0 +1,24 @@
+{
+  "_说明": "这是本工具唯一的配置文件。cookie 留空时会尝试复用本机 streamlink 的登录配置。改完保存即可，无需重启系统。",
+  "bilibili": {
+    "_说明": "看弹幕通常只需 sessdata；发弹幕额外需要 bili_jct。取法见 README「配置」一节。此文件含凭证，请勿外发或提交到仓库。",
+    "sessdata": "",
+    "bili_jct": "",
+    "buvid3": ""
+  },
+  "defaults": {
+    "_说明": "所有房间的默认值；单个房间可各自覆盖 volume / stream。",
+    "room": "example",
+    "volume": 50,
+    "stream": "auto",
+    "max_age": 120,
+    "interval": 2
+  },
+  "rooms": {
+    "example": {
+      "url": "https://live.bilibili.com/6",
+      "note": "示例房间：B 站英雄联盟赛事（公开直播间）。可改成你自己的直播间地址或房间号，也可以加更多别名。",
+      "volume": 40
+    }
+  }
+}
